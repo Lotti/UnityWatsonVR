@@ -60,7 +60,7 @@ public class Quiz : MonoBehaviour {
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError) {
-            Modal.ShowModal("Non riesco a collegarmi a internet!\n\n" + www.error);
+            Modal.ShowModal("Can't reach the Internet!\n\n" + www.error);
             Main.EndQuiz();
         } else {
             // Show results as text
@@ -83,7 +83,7 @@ public class Quiz : MonoBehaviour {
             questionText.text = q.question;
             buttonAnswer.interactable = true;
         } else {
-            Modal.ShowModal("Il quiz è terminato!\nHai totalizzato " + score + " punti!");
+            Modal.ShowModal("The quiz ended!\nYou scored " + score + " points!");
             Main.EndQuiz();
         }
     }
@@ -107,9 +107,9 @@ public class Quiz : MonoBehaviour {
 
             if (correct) {
                 score += q.score;
-                Modal.ShowModal("Risposta corretta!\n\n" + r);
+                Modal.ShowModal("Right answer!\n\n" + r);
             } else {
-                Modal.ShowModal("Risposta sbagliata!\n\n" + r);
+                Modal.ShowModal("Wrong answer!\n\n" + r);
             }
             questionPointer++;
             NextQuestion();

@@ -16,7 +16,11 @@ public class FaceResponse {
             }
         }
 
-        return String.Join("\n", array);
+        if (array.Count > 0) {
+            return String.Join("\n", array);
+        } else {
+            return "No faces detected :\\";
+        }
     }
 }
 
