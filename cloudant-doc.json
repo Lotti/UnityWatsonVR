@@ -1,0 +1,35 @@
+{
+  "_id": "quiz",
+  "questions": [
+    {
+      "question": "Qual'è il rifiuto riciclabile al 100%?",
+      "answers": [
+        "waste_glass",
+        "waste_aluminium"
+      ],
+      "score": 5
+    },
+    {
+      "question": "Qual'è il rifiuto riciclabile infinite volte?",
+      "answers": [
+        "waste_glass",
+        "waste_aluminium"
+      ],
+      "score": 5
+    },
+    {
+      "question": "Inquina i mari ed è fonte di morte per i pesci",
+      "answers": [
+        "waste_plastic"
+      ],
+      "score": 5
+    },
+    {
+      "question": "Qual'è il rifiuto riciclabile al 100%?",
+      "answers": [
+        "waste_organic"
+      ],
+      "score": 5
+    }
+  ]
+}
