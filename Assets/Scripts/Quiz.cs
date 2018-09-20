@@ -113,7 +113,6 @@ public class Quiz : MonoBehaviour {
             }
             questionPointer++;
             NextQuestion();
-
         }, (RESTConnector.Error error, Dictionary<string, object> customData) => {
             Modal.ShowModal("error while querying watson: " + error.ErrorMessage);
             buttonAnswer.interactable = true;
